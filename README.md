@@ -70,8 +70,6 @@ A simple crud rest api using express
 
 ## Products
 
-### List Products
-
 `GET /products/`
 
 ### Request
@@ -100,8 +98,6 @@ A simple crud rest api using express
       "page": 1,
       "per_page": 10
     }
-
-### Show Product
 
 `GET /products/:id`
 
