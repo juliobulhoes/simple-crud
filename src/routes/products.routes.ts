@@ -4,7 +4,7 @@ import { getRepository } from 'typeorm';
 
 import ListProductsService from '../services/ListProductsService';
 import ShowProductService from '../services/ShowProductService';
-import UpdatePŕoductService from '../services/UpdateProductService';
+import UpdateProductService from '../services/UpdateProductService';
 import DeleteProductService from '../services/DeleteProductService';
 
 import Product from '../models/Product';
@@ -60,7 +60,7 @@ productsRouter.put('/:id', checkAuthentication, async (request, response) => {
   const { id } = request.params;
   const { name, value } = request.body;
 
-  const updateProductService = new UpdatePŕoductService();
+  const updateProductService = new UpdateProductService();
 
   const product = await updateProductService.execute({ id, name, value });
 
